@@ -1,59 +1,35 @@
 <script>
-	import Counter from './Counter.svelte';
-	import welcome from '$lib/images/svelte-welcome.webp';
-	import welcome_fallback from '$lib/images/svelte-welcome.png';
 </script>
 
-<svelte:head>
-	<title>Home</title>
-	<meta name="description" content="Svelte demo app" />
-</svelte:head>
+<head>
+<title>Maldron</title>
+<script src="https://kit.fontawesome.com/f64b15de80.js" crossorigin="anonymous"></script>
+</head>
+<body>
 
-<section>
-	<h1>
-		<span class="welcome">
-			<picture>
-				<source srcset={welcome} type="image/webp" />
-				<img src={welcome_fallback} alt="Welcome" />
-			</picture>
-		</span>
-
-		to your new<br />SvelteKit app
-	</h1>
-
-	<h2>
-		try editing <strong>src/routes/+page.svelte</strong>
-	</h2>
-
-	<Counter />
-</section>
+	<!-- HERO SECTION -->
+	<div class="hero">
+	  <h1>Hi, I'm Maldron</h1>
+	  <p>Game Programmer & Software engineer</p>
+	  <div class="btns">
+		<a href="#about">About</a>
+		<a href="#about">Skills</a>
+		<a href="#projects">Projects</a>
+	  </div>
+	  <div class="icons">
+		<a href="https://github.com/maldron0309" target="_blank"
+		  ><i class="fa-brands fa-github"></i
+		></a>
+		<a href="https://maldron7.itch.io/" target="_blank"
+		  ><i class="fa-brands fa-itch-io"></i
+		></a>
+		<a href="mailto:maldron0309@gmail.com" target="_blank"
+		  ><i class="fa-solid fa-envelope"></i
+		></a>
+	  </div>
+	</div>
+  </body>
 
 <style>
-	section {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		flex: 0.6;
-	}
 
-	h1 {
-		width: 100%;
-	}
-
-	.welcome {
-		display: block;
-		position: relative;
-		width: 100%;
-		height: 0;
-		padding: 0 0 calc(100% * 495 / 2048) 0;
-	}
-
-	.welcome img {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		top: 0;
-		display: block;
-	}
 </style>
