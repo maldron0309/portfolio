@@ -11,7 +11,7 @@
 			<h3>Mald <span>ron</span></h3>
 		</a>
 	  </div>
-	  <img src="images/profile.png" />
+	  <img src="images/profile.png" alt="profile"/>
 	</nav>
 </header>
 
