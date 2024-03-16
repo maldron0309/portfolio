@@ -20,4 +20,10 @@
   color: inherit;
   text-decoration: none;
 }
+
+a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
 </style>
